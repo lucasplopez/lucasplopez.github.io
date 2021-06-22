@@ -30,7 +30,7 @@ a {
 /* HEADER */
 
 header {
-  width: 100%;
+  width: auto;
   height: 100vh;
   text-align: center;
   /* background-image: url(/assets/fondo.png); */
@@ -41,8 +41,7 @@ header {
 #logo {
   /* margin: 2rem; */
   padding-top: 2rem;
-  min-width: 40%;
-  max-width: 80%;
+  min-width: 32%;
   height: auto;
   border-radius: 50%;
 }
