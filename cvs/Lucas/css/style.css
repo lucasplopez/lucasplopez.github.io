@@ -1,4 +1,4 @@
-  /* ********** Reset ********** */
+   /* ********** Reset ********** */
   
   html {
     box-sizing: border-box;
@@ -87,27 +87,78 @@
     font-family: corbel light, Calibri Light, Arial;
     color: DarkTurquoise;
   }
-
+/* Seccion Estudios */
   .estudios{
     display: grid;
     grid-column: 1/13;
     grid-template-columns: repeat(12, 1fr);
     background-color: WhiteSmoke;
     text-align:center;
+    align-items: center;
   }
+
+  .estudios>h2{  
+  grid-column: 2/6;
+  grid-row: 1/5;
+  font-size: 6vmax;
+  font-family: corbel light, Calibri Light, Arial;
+  color: DarkTurquoise;
+  }
+
+  .estudios>p{
+    grid-column: 6/12;
+    font-size: 2vmax;
+  }
+
+  /* Seccion experiencia */
   .experiencia{
     display: grid;
     grid-column: 1/13;
     padding: 0 10% 0 10%;
   }
+   /* Seccion formacion */
   .formacion{
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
     grid-column: 1/13;
     background-color: WhiteSmoke;
   }
+
+  .formacion>h2{
+    grid-column: 1/13;
+  }
+
+  .formacion>p{
+   grid-column: 2/12;
+  }
+
+/* virtudes */
   .virtudes{
     display: grid;
     grid-column: 1/13;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0 5%
+  }
+
+  .virtudes>h2{
+    grid-column: 1/5;
+  }
+
+  .virtudes>div{
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .virtudes i{
+    font-size: 3rem;
+  }
+  
+  .cardtitle{
+    background-color: rgb(226, 226, 221);
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
   }
 
   .logo{
@@ -158,6 +209,17 @@
       text-align: justify;
       grid-template-rows: auto auto auto;
     }
+
+    /* estudios */
+    .estudios>h2{  
+      grid-column: 1/13;
+      grid-row: auto;
+      font-size: 6vmax;
+      }
+
+    .estudios>p{
+      grid-column: 1/13;
+     }
 
     .container{
       display: grid;
