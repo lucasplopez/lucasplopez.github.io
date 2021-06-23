@@ -1,0 +1,65 @@
+/*article > p { color: # }*/
+
+body, html 
+		{ 
+			background-color: #ECF2FD; 
+			color: #414141;
+			font-family: Helvetica, sans-serif; 
+			font-size: 36px;
+			text-align: center;
+		}
+
+footer { height: 150px; }
+
+footer > div {
+	margin-top: 120px;
+	font-size: 1rem;
+ 	}
+
+h2 {
+	margin: 0 3rem;
+	text-align: right;
+	}
+
+nav{ padding: 1rem; }
+
+ul {
+	list-style-position: inside;
+	text-align: left;
+	}
+
+img {
+	border-radius: 50%;
+	width:20%;
+	height: auto;
+}
+
+.imagInicio { 
+	height: 64px;
+	margin: 2rem;
+	width: 64px;
+	}
+
+.iconTec {	
+	text-align: center;
+	width: 3rem;
+ 	}
+
+.left50 {
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+	width: 45%;
+	}
+
+.right50 {
+	display: inline-block;
+	font-size: 16px;
+	text-align: right;
+	width: 45%;
+	}
+
+#fotoPortada {
+	border-radius: 100%;
+	width: 450px;
+	}
