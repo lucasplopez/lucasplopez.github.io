@@ -599,6 +599,7 @@ h1 p {
 
 #Precios {
   padding: 0 6rem;
+  padding-bottom: 2rem;
 }
 
 .precios {
@@ -609,7 +610,6 @@ h1 p {
 }
 
 .precio-cards {
-  /* border: solid thin; */
   /* display: grid; */
   grid-template-rows: repeat(3, 1fr);
   /* border-color: skyblue; */
@@ -618,12 +618,12 @@ h1 p {
   box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
 }
 
-.precio-cards div {
-  /* border: solid thin;
-  border-color: white; */
-  height: 8rem;
-  /* padding: 1rem 0.5rem 0.5rem 0.5rem; */
-}
+/* .precio-cards div {
+  border: solid thin;
+  border-color: white;
+  min-height: 8rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+} */
 
 .precio-cards div:first-child {
   padding: 1rem;
@@ -645,10 +645,14 @@ h1 p {
   font-size: 1.2rem;
   padding: 1rem 0.5rem 0.5rem 1rem;
 }
+
 .price-card {
+  position: sticky;
+  top: 100%;
   border-radius: 0 0 1rem 1rem;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
-  max-height: 6rem;
+  min-height: 6rem;
+  word-wrap: break-word;
 }
 
 /* -----------------Footer-----------------*/
