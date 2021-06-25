@@ -1,0 +1,197 @@
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #d4e0f7;
+  --second-color: #414141;
+  --container-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 2vmax;
+}
+
+section {
+  padding: 6vmax;
+}
+
+header {
+  background-color: var(--second-color);
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.beginin {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 2vh;
+}
+
+#foto-portada {
+  border-radius: 50%;
+  width: 400px;
+  max-width: 40vw;
+}
+
+section > h2 {
+  list-style-position: inside;
+  text-align: right;
+  padding-bottom: 4rem;
+}
+
+.section-tec {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: var(--container-width);
+  text-align: left;
+}
+
+.iconTec {
+  text-align: center;
+  max-width: 5rem;
+}
+
+.imagInicio {
+  max-height: 64px;
+  max-width: 64px;
+  margin: 2vmax;
+}
+
+/*              Scroll BTN                */
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 8vw;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  cursor: pointer;
+  outline: 0;
+  border: 1;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  border: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*              Coment Box                */
+
+form {
+  padding-top: 2rem;
+}
+
+input,
+textarea {
+  font: 0.9rem "handwriting", sans-serif;
+  border-radius: 0.5rem;
+  margin: 0.1rem;
+  width: 150px;
+  color: var(--second-color);
+}
+
+#comentarios {
+  border-style: solid;
+  border-color: var(--second-color);
+  width: 100%;
+}
+
+#comentarios:focus {
+  outline: none;
+}
+
+.enviar {
+  background-color: var(--main-color);
+  color: var(--second-color);
+  outline: none;
+  font: 0.9rem "handwriting", sans-serif;
+  border-radius: 0.5rem;
+  margin: 0.1rem;
+  width: 150px;
+  color: var(--second-color);
+}
+
+/*              Dark theme BTN                */
+.dark-theme-btn {
+  /* position: fixed; */
+  /* z-index: 999; */
+  /* top: 1vh; */
+  /* right: 8vw; */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  cursor: pointer;
+  outline: 0;
+  border: 1;
+  transition: all 0.3s ease-out;
+}
+
+.dark-theme-btn:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+  border: 0;
+}
+
+.dark-mode {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
