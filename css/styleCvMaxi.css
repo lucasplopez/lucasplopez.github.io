@@ -44,6 +44,12 @@ header {
   width: 100%;
 }
 
+.log {
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+}
+
 .beginin {
   padding: 0;
   margin-left: auto;
