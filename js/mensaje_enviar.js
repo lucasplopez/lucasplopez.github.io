@@ -5,7 +5,7 @@ export default function sendComment(comentario) {
 
   d.addEventListener("click", (e) => {
     if (e.target === $comentario) {
-      alert("formulario enviado");
+      alert("El formulario no pudo ser enviado");
       d.getElementById("comentarios").value = "";
     }
   });
