@@ -286,6 +286,7 @@
     border-color: rgb(214, 214, 214);
     margin: 0;
     padding: 0.5rem;
+    cursor: pointer;
   }
 
   .acordeon .contenidoacordeon{
