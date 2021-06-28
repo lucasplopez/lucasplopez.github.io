@@ -265,3 +265,37 @@
     }
   }
 
+  /* Acordeon */
+
+  .acordeon
+
+  .acordeon .bloqueacordeon{
+    margin: 0.5rem;
+  }
+
+  .acordeon .tituloacordeon{
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(214, 214, 214);
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .acordeon .contenidoacordeon{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease 0
+  }
+
+  .acordeon .bloqueacordeon.activo .contenidoacordeon{
+    height: 100%;
+    overflow: hidden;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(214, 214, 214);
+    padding: 1rem;
+  }
