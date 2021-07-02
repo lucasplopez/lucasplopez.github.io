@@ -597,6 +597,7 @@ h1 p {
 
 /* -----------------Precios-----------------*/
 
+
 #Precios {
   padding: 0 6rem;
   padding-bottom: 2rem;
@@ -604,30 +605,24 @@ h1 p {
 
 .precios {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding-top: 2rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1 rem;
 }
 
 .precio-cards {
-  /* display: grid; */
+  margin: 1vw;
+  grid-column: span;
+  /* border: solid thin #000; */
   grid-template-rows: repeat(3, 1fr);
-  /* border-color: skyblue; */
   border-radius: 1rem;
   background-color: #fff;
   box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
 }
 
-/* .precio-cards div {
-  border: solid thin;
-  border-color: white;
-  min-height: 8rem;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
-} */
-
 .precio-cards div:first-child {
-  padding: 1rem;
-  height: auto;
+  padding: 1vmax;
+  height: 7vmax;
   color: #fff;
   font-weight: bolder;
   background-color: var(--third-background);
@@ -635,7 +630,7 @@ h1 p {
 }
 
 .price {
-  font-size: 2rem;
+  font-size: 3vmax;
   font-weight: bold;
   color: #000;
 }
