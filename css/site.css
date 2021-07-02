@@ -622,7 +622,7 @@ h1 p {
 
 .precio-cards div:first-child {
   padding: 1vmax;
-  height: 7vmax;
+  height: 8vmax;
   color: #fff;
   font-weight: bolder;
   background-color: var(--third-background);
