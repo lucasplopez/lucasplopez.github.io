@@ -1,11 +1,12 @@
 import scrollTopButton from "./boton_scroll.js";
+import { ContactForm } from "./contact_form.js";
 import darkTheme from "./dark_theme.js";
-import sendComment from "./mensaje_enviar.js";
 
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
   scrollTopButton(".scroll-top-btn");
-  sendComment("comments");
+  // sendComment("comments");
+  ContactForm();
 });
 darkTheme(".dark-theme-btn", "dark-mode");
