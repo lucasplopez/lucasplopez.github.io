@@ -1,4 +1,7 @@
-# Política de Privacidad
+---
+layout: default
+title: Política de Privacidad - Anotador de Loba
+---
 
 Esta política de privacidad describe cómo se maneja la información de los usuarios en la aplicación de anotador de Loba.
 
