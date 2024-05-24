@@ -2,6 +2,7 @@
 layout: privacy
 title: Política de Privacidad - Anotador de Loba
 ---
+##  <div class="center-title">Política de Privacidad - Anotador de Loba</div>
 
 Esta política de privacidad describe cómo se maneja la información de los usuarios en la aplicación de anotador de Loba.
 
