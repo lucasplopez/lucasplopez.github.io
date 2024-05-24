@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: privacyAnotadorLoba
 title: Política de Privacidad - Anotador de Loba
 ---
 
