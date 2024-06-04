@@ -1,23 +1,24 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
 :root {
-  --main-font: sans-serif;
+  --main-font: 'Plus Jakarta Sans', sans-serif;
   --font-size: 16px;
   --main-color: #222;
   --second-color: #e76f51;
 }
 
 html {
-  box-sizing: border-box;
   font-family: var(--main-font);
   background-color: var(--main-color);
   font-size: var(--font-size);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 100%;
 }
 
-*,
-* :before,
-* :after {
-  box-sizing: inherit;
+*, *::before, *::after {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -27,68 +28,318 @@ a {
   text-decoration: none;
 }
 
-/* HEADER */
+body {
+  background-image: url('/assets/fondo.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Evita que el contenido exceda el tamaño de la ventana */
+}
 
 header {
-  width: auto;
-  height: 100vh;
+  width: 100%;
+  height: 2rem;
   text-align: center;
-  /* background-image: url(/assets/fondo.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: sticky;
 }
 
-#logo {
-  /* margin: 2rem; */
-  padding-top: 2rem;
-  min-width: 32%;
+.containerHeader {
+  background-color: black;
+  height: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.containerHeader p {
+  flex: 1;
+  text-align: left;
+  max-width: 10rem;
+}
+
+.conjuntoDeIconos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre los iconos */
+}
+
+.icon {
+  width: 1.3rem; /* Tamaño de los iconos */
   height: auto;
-  border-radius: 50%;
 }
 
-header a {
-  color: var(--second-color);
-  display: block;
-  font-size: 2em;
+.small-icon {
+  width: 0.9rem; /* Tamaño más pequeño */
+  height: auto;
+  margin-top: -0.4rem; /* Alinear hacia arriba */
+  margin-right: -1rem; /* Espacio adicional hacia la derecha */
 }
 
-header a:hover {
-  color: #fff;
+.battery-text {
+  font-size: 1.1rem; /* Mismo tamaño que los iconos */
+  margin-left: -0.5rem; /* Espacio entre el icono y el texto */
 }
 
-/* CARDS CVS  */
+.camara {
+  background-color: rgba(78, 78, 78, 1);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camara2 {
+  background-color: rgba(78, 78, 78, 1);
+  height: 1.55rem;
+  width: 1.55rem;
+  border-radius: 100%;
+  border: 3.5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camara3 {
+  background-color: black;
+  height: 0.9rem;
+  width: 0.9rem;
+  border-radius: 100%;
+}
+
 main {
-  color: var(--second-color);
-  height: 100vh;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.cards-cv {
-  display: inline-flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-cv {
-  font-size: 2vmax;
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Cambio importante para la alineación */
+  justify-content: flex-start; /* Alinear el contenido al principio (arriba) */
+  align-items: center; /* Centrar el contenido horizontalmente */
   padding: 1rem;
-  border-radius: 0.5rem;
-  margin: 1rem;
-  width: 30%;
 }
 
-.cards-cv :hover {
-  color: #fff;
-  background-color: var(--second-color);
+/* Envolver el contenido dentro de main */
+.content-wrapper {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Centrar el contenido horizontalmente */
 }
 
-.card-cv div img {
-  width: 80%;
-  height: auto;
+/* Estilo para el h1 */
+h1 {
+  background-color: #333; /* Gris oscuro */
+  color: rgb(184, 184, 184);
+  border-radius: 50px; /* Border radius completo */
+  width: 99%; /* Ocupa casi todo el ancho de la pantalla */
+  height: 3rem; /* Doble del header que es de 2rem */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: 600;
+  flex-wrap: nowrap; /* Evita que el contenido se ajuste en pantallas más pequeñas */
+}
+
+/* Estilo para el texto largo */
+.welcome-text {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+  overflow: hidden; /* Ocultar el texto desbordado */
+  text-overflow: ellipsis; /* Mostrar puntos suspensivos (...) */
+}
+
+/* Estilo para el texto corto */
+.code-text {
+  flex: 0;
+  text-align: right;
+  margin-left: 1rem;
+  font-weight: 800;
+  font-size: x-large;
+}
+
+/* Estilo para el contenedor de la hora */
+.time-container {
+  margin-top: 1rem;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.time-text {
+  font-size: 7rem; /* Ajusta según necesites */
+}
+
+.info-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.date {
+  font-size: 1.5rem; /* Ajusta según necesites */
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 1rem solid white;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
   border-radius: 50%;
 }
 
-.card-text {
-  font-size: 1.5vmax;
+.square {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+
+/* General styles for the app items */
+.app-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+}
+
+/* Style for the app icon (squircle shape) */
+.app-icon {
+  width: 70px; /* Adjust size as needed */
+  height: 70px; /* Adjust size as needed */
+  border-radius: 20px; /* Squircle shape */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Style for the app name */
+.app-name {
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 15px; /* Adjust size as needed */
+}
+
+/* Styles for the app groups */
+.primer-grupo, .segundo-grupo, .tercer-grupo {
+  background-color: rgba(255, 255, 255, 0.2); /* Black background with 50% opacity */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Align apps to the left */
+  max-height: 250px;
+  position: relative; /* Para posicionar el nombre del grupo */
+  margin-bottom: 40px; /* Espacio para el nombre del grupo */
+}
+
+.group-name {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 10px; /* Espacio arriba */
+  position: absolute;
+  bottom: -30px; /* Ajusta según el espacio necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+/* Layout for large and medium screens */
+@media (min-width: 768px) {
+  .apps-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .primer-grupo, .segundo-grupo, .tercer-grupo {
+    flex: 1 1 100%; /* Each group takes the full width */
+    margin: 10px;
+  }
+
+  /* Ensure each group item adjusts to the full width */
+  .app-item {
+    flex: 1 1 10%; /* Each app item takes a portion of the group */
+    max-width: 100px; /* Prevent app items from becoming too large */
+  }
+}
+
+/* Layout for small screens */
+@media (max-width: 767px) {
+  .apps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+  }
+
+  .primer-grupo, .segundo-grupo, .tercer-grupo {
+    display: contents;
+  }
+
+  .app-item {
+    flex: none;
+  }
+
+  .group-name {
+    display: none;
+  }
+  .time-text {
+    font-size: 5rem; /* Ajusta según necesites */
+  }
+}
+
+/* Esconder App 7 por defecto */
+@media (min-width: 768px) and (max-width: 1051px) {
+  .segundo-grupo .app-item:nth-child(n+5) {
+    display: none;
+  }
 }

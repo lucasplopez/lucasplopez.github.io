@@ -8,46 +8,92 @@
   <title>Developez</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="shortcut icon" href="assets/Logo.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Plus Jakarta Sans -->
+
 </head>
 
 <body>
   <header>
-    <!-- <a href="">
-      <h1>Developez</h1>
-    </a> -->
-    <img id="logo" src="assets/logo.png" alt="Logo">
-    <a href="site.html">Ingresar al sitio</a>
-    <br>
-    <br>
-    <br>
-    <a href="#team">Conoce a nuestro equipo</a>
-    <a href="#team"><i class="fas fa-angle-double-down"></i></a>
+    <div class="containerHeader">
+      <p class="hora-actualizada"></p>
+      <div class="camara">
+          <div class="camara2">
+            <div class="camara3">
+            </div>
+          </div>
+      </div>
+      <div class="conjuntoDeIconos">
+        <img src="img/wifi.svg" alt="Wi-Fi" class="icon">
+        <img src="img/5g.svg" alt="5g" class="small-icon">
+        <img src="img/signal.svg" alt="Señal" class="icon">
+        <img src="img/bateria.svg" alt="Batería" class="icon">
+        <span class="battery-text">100%</span>
+      </div>
+    </div>
   </header>
   <main>
-    <section id="team">
-      <h2>Nuestro equipo</h2>
-    </section>
-    <div class="cards-cv">
-      <div class="card-cv">
-        <a href="cvMaxi">
-          <div><img src="img/fotoMaxi.jpg" alt="Gómez, Maximiliano"></div>
-          <div>
-            <p class="name">Maxi Gómez</p>
-            <p class="card-text">Conóceme</p>
-          </div>
-        </a>
+    <div class="content-wrapper">
+      <h1>
+        <span class="welcome-text">Bienvenido a Developez... Desarrolladores de Software</span>
+        <span class="code-text">&lt;/&gt;</span>
+      </h1>
+      <div class="time-container">
+        <div class="time-text hora-actualizada"></div>
+        <div class="info-text">
+          <span class="date"></span>
+        </div>
       </div>
-      <div class="card-cv">
-        <a href="/cvlucas">
-          <div><img src="img/fotolucas.jpg" alt="López, Lucas"></div>
-          <div>
-            <p class="name">Lucas López</p>
-            <p class="card-text">Conóceme</p>
-          </div>
-        </a>
+    </div>
+    <div class="apps-container">
+      <div class="primer-grupo">
+        <div class="app-item">
+          <img src="img/lucascv.png" alt="Lucas CV" class="app-icon">
+          <a class="app-name" href="/cvlucas.html">Lucas CV</a>
+        </div>
+        <div class="app-item">
+          <img src="img/maxicv.png" alt="Maxi CV" class="app-icon">
+          <span class="app-name">Maxi CV</span>
+        </div>
+        <div class="group-name">Nosotros</div> <!-- Añadir el nombre del grupo -->
+      </div>
+      <div class="segundo-grupo">
+        <div class="app-item">
+          <img src="img/anotadordelobaicon.png" alt="Anotador" class="app-icon">
+          <span class="app-name">Anotador...</span>
+        </div>
+        <div class="app-item">
+          <img src="img/tercertiempo.png" alt="TercerTiempoGym" class="app-icon">
+          <span class="app-name">Tercer T...</span>
+        </div>
+        <div class="app-item">
+          <img src="img/grillados.png" alt="Grillados" class="app-icon">
+          <span class="app-name">Grillados</span>
+        </div>
+        <div class="group-name">Proyectos</div> <!-- Añadir el nombre del grupo -->
+      </div>
+      <div class="tercer-grupo">
+        <div class="app-item">
+          <img src="img/whatsapp.png" alt="Anotador" class="app-icon">
+          <span class="app-name">Whatsapp</span>
+        </div>
+        <div class="app-item">
+          <img src="img/linkedin.png" alt="Anotador" class="app-icon">
+          <span class="app-name">Linkedin</span>
+        </div>
+        <div class="group-name">Contáctanos</div> <!-- Añadir el nombre del grupo -->
       </div>
   </main>
+  <footer>
+    <div class="footer-column">
+      <div class="triangle"></div>
+    </div>
+    <div class="footer-column">
+      <div class="circle"></div>
+    </div>
+    <div class="footer-column">
+      <div class="square"></div>
+    </div>
+  </footer>
 </body>
-<script src="https://kit.fontawesome.com/78b951af6d.js" crossorigin="anonymous"></script>
-
+<script src="js/funciones.js"></script>
 </html>
