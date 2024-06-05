@@ -47,23 +47,23 @@
     <div class="apps-container">
       <div class="primer-grupo">
         <div class="app-item">
-          <img src="img/lucascv.png" alt="Lucas CV" class="app-icon">
-          <a class="app-name" href="/cvlucas.html">Lucas CV</a>
+          <img src="img/lucascv.png" alt="Lucas CV" class="app-icon" data-gallery="gallery1">
+          <a class="app-name" data-gallery="gallery1">Lucas CV</a>
         </div>
         <div class="app-item">
-          <img src="img/maxicv.png" alt="Maxi CV" class="app-icon">
-          <span class="app-name">Maxi CV</span>
+          <img src="img/maxicv.png" alt="Maxi CV" class="app-icon" data-gallery="gallery2">
+          <span class="app-name" data-gallery="gallery2">Maxi CV</span>
         </div>
         <div class="group-name">Nosotros</div> <!-- Añadir el nombre del grupo -->
       </div>
       <div class="segundo-grupo">
         <div class="app-item">
           <img src="img/anotadordelobaicon.png" alt="Anotador" class="app-icon">
-          <span class="app-name">Anotador...</span>
+          <span class="app-name">Anotador de Loba</span>
         </div>
         <div class="app-item">
           <img src="img/tercertiempo.png" alt="TercerTiempoGym" class="app-icon">
-          <span class="app-name">Tercer T...</span>
+          <span class="app-name">Tercer Tiempo Gym</span>
         </div>
         <div class="app-item">
           <img src="img/grillados.png" alt="Grillados" class="app-icon">
@@ -72,10 +72,12 @@
         <div class="group-name">Proyectos</div> <!-- Añadir el nombre del grupo -->
       </div>
       <div class="tercer-grupo">
-        <div class="app-item">
-          <img src="img/whatsapp.png" alt="Anotador" class="app-icon">
-          <span class="app-name">Whatsapp</span>
-        </div>
+        <a href="https://web.whatsapp.com" target="_blank">
+          <div class="app-item" >
+            <img src="img/whatsapp.png" alt="Anotador" class="app-icon">
+            <span class="app-name">Whatsapp</span>
+          </div>
+        </a>
         <div class="app-item">
           <img src="img/linkedin.png" alt="Anotador" class="app-icon">
           <span class="app-name">Linkedin</span>
@@ -94,6 +96,7 @@
       <div class="square"></div>
     </div>
   </footer>
+  <gallery-component></gallery-component>
 </body>
 <script src="js/funciones.js"></script>
 </html>
